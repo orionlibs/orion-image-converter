@@ -21,7 +21,7 @@ public class ImageToIcoServiceTest
     {
         Path imagePath = Paths.get(ImageToIcoServiceTest.class.getResource("/io/github/orionlibs/image_converter/images/1.jpg").toURI());
         File imageFile = imagePath.toFile();
-        ImageToIcoService.convertImageToJPG(imageFile, tmpDir + "/1.jpg");
+        ImageConverterService.convertImageToJPG(imageFile, tmpDir + "/1.jpg");
         new File(tmpDir + "/1.jpg").delete();
         assertTrue(true);
     }
@@ -32,7 +32,7 @@ public class ImageToIcoServiceTest
     {
         Path imagePath = Paths.get(ImageToIcoServiceTest.class.getResource("/io/github/orionlibs/image_converter/images/1.jpg").toURI());
         File imageFile = imagePath.toFile();
-        ImageToIcoService.convertImageToPNG(imageFile, tmpDir + "/1.png");
+        ImageConverterService.convertImageToPNG(imageFile, tmpDir + "/1.png");
         new File(tmpDir + "/1.png").delete();
         assertTrue(true);
     }
@@ -43,7 +43,7 @@ public class ImageToIcoServiceTest
     {
         Path imagePath = Paths.get(ImageToIcoServiceTest.class.getResource("/io/github/orionlibs/image_converter/images/1.jpg").toURI());
         File imageFile = imagePath.toFile();
-        ImageToIcoService.convertImageToBMP(imageFile, tmpDir + "/1.bmp");
+        ImageConverterService.convertImageToBMP(imageFile, tmpDir + "/1.bmp");
         new File(tmpDir + "/1.bmp").delete();
         assertTrue(true);
     }
@@ -54,7 +54,7 @@ public class ImageToIcoServiceTest
     {
         Path imagePath = Paths.get(ImageToIcoServiceTest.class.getResource("/io/github/orionlibs/image_converter/images/1.jpg").toURI());
         File imageFile = imagePath.toFile();
-        ImageToIcoService.convertImageToTIF(imageFile, tmpDir + "/1.tif");
+        ImageConverterService.convertImageToTIF(imageFile, tmpDir + "/1.tif");
         new File(tmpDir + "/1.tif").delete();
         assertTrue(true);
     }
@@ -65,7 +65,7 @@ public class ImageToIcoServiceTest
     {
         Path imagePath = Paths.get(ImageToIcoServiceTest.class.getResource("/io/github/orionlibs/image_converter/images/1.jpg").toURI());
         File imageFile = imagePath.toFile();
-        ImageToIcoService.convertImageToTIFF(imageFile, tmpDir + "/1.tiff");
+        ImageConverterService.convertImageToTIFF(imageFile, tmpDir + "/1.tiff");
         new File(tmpDir + "/1.tiff").delete();
         assertTrue(true);
     }
@@ -76,7 +76,7 @@ public class ImageToIcoServiceTest
     {
         Path imagePath = Paths.get(ImageToIcoServiceTest.class.getResource("/io/github/orionlibs/image_converter/images/1.jpg").toURI());
         File imageFile = imagePath.toFile();
-        ImageToIcoService.convertImageToGIF(imageFile, tmpDir + "/1.gif");
+        ImageConverterService.convertImageToGIF(imageFile, tmpDir + "/1.gif");
         new File(tmpDir + "/1.gif").delete();
         assertTrue(true);
     }
