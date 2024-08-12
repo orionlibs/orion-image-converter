@@ -11,7 +11,7 @@ import org.junit.jupiter.api.TestInstance.Lifecycle;
 
 @TestInstance(Lifecycle.PER_CLASS)
 //@Execution(ExecutionMode.CONCURRENT)
-public class ImageToIcoServiceTest
+public class ImageToIcoServiceTest extends ATest
 {
     private static final String tmpDir = System.getProperty("java.io.tmpdir");
 
